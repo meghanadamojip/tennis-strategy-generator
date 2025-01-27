@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Tennis Match Strategy Generator</h1>
+    
+    <div class="opponent-form">
+        <h2>Opponent Analysis</h2>
+        <select id="playStyle">
+            <option value="baseline">Baseline Player</option>
+            <option value="serve-volley">Serve and Volley</option>
+            <option value="aggressive">Aggressive Baseliner</option>
+            <option value="defensive">Defensive Player</option>
+        </select>
+        
+        <div class="rating-container">
+            <label>Serve Strength (1-10):</label>
+            <input type="range" id="serveRating" min="1" max="10">
+            
+            <label>Backhand Strength (1-10):</label>
+            <input type="range" id="backhandRating" min="1" max="10">
+            
+            <label>Forehand Strength (1-10):</label>
+            <input type="range" id="forehandRating" min="1" max="10">
+            
+            <label>Movement Speed (1-10):</label>
+            <input type="range" id="speedRating" min="1" max="10">
+        </div>
+        
+        <button onclick="generateStrategy()">Generate Strategy</button>
+    </div>
+    
+    <div id="strategy-output" class="strategy-output"></div>
+</div>
